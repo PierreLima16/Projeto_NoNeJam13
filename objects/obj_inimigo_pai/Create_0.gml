@@ -1,7 +1,7 @@
 velh = 0;
 velv = 0;
 
-max_vel = 1;
+max_vel = 0.5;
 
 dir = 1;
 
@@ -9,8 +9,9 @@ estado = "Seguindo";
 
 vida_max = 2;
 vida_atual = vida_max;
+level = 1;
 
-colisores = [obj_solido];
+colisores = [obj_solido, obj_inimigo_pai];
 
 alvo = noone;
 dest_x = 0;
@@ -18,6 +19,7 @@ dest_y = 0;
 
 tempo_ataque = FPS;
 timer_ataque = 0;
+
 
 toma_dano = function(_dano)
 {
@@ -84,6 +86,28 @@ maquina_estados = function()
         case "Morte":
             
             instance_destroy();
+            
+            static _criei = false;
+            if (!_criei)
+            {
+                
+                var _x = x - sprite_xoffset + sprite_width/2;
+                var _y = y - sprite_yoffset + sprite_height/2;
+                
+                var _dir = 0;
+                var _val = random_range(30, 80);
+                
+                repeat(5)
+                {
+                    var _part = instance_create_layer(_x, _y, "Entidades", obj_part_inimigos);
+                    _part.dir = _dir;
+                    _part.level_inimigo = level;
+                    _part.vel_inimigo = max_vel;
+                    _part.vida_inimigo = vida_max;
+                    
+                    _dir += _val;
+                }
+            }
             
             break;
     }

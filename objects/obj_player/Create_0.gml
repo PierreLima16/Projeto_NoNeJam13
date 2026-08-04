@@ -20,7 +20,6 @@ var _y = y - sprite_yoffset + sprite_height/2;
 minha_arma = instance_create_layer(_x, _y, "Armas", obj_arma_player);
 minha_arma.arma_id = id;
 
-
 aplica_movimento = function()
 {
     //Pegando meus inputs básicos
