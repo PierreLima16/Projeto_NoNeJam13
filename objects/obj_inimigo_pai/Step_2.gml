@@ -1,0 +1,1 @@
+colisao(velh, velv, colisores);
