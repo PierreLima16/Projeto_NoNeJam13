@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inimigo_01",
-  "eventList":[],
+  "%Name":"obj_inimigo_02",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_inimigo_01",
+  "name":"obj_inimigo_02",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo_01",
-    "path":"sprites/spr_inimigo_01/spr_inimigo_01.yy",
+    "name":"spr_inimigo_02",
+    "path":"sprites/spr_inimigo_02/spr_inimigo_02.yy",
   },
   "spriteMaskId":null,
   "visible":true,

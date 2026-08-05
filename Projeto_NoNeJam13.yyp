@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"obj_arma_player","path":"objects/obj_arma_player/obj_arma_player.yy",},},
     {"id":{"name":"obj_inimigo_01","path":"objects/obj_inimigo_01/obj_inimigo_01.yy",},},
+    {"id":{"name":"obj_inimigo_02","path":"objects/obj_inimigo_02/obj_inimigo_02.yy",},},
     {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
     {"id":{"name":"obj_part_inimigos","path":"objects/obj_part_inimigos/obj_part_inimigos.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
@@ -45,7 +46,8 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_utilidades","path":"scripts/scr_utilidades/scr_utilidades.yy",},},
     {"id":{"name":"spr_arma","path":"sprites/spr_arma/spr_arma.yy",},},
-    {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
+    {"id":{"name":"spr_inimigo_01","path":"sprites/spr_inimigo_01/spr_inimigo_01.yy",},},
+    {"id":{"name":"spr_inimigo_02","path":"sprites/spr_inimigo_02/spr_inimigo_02.yy",},},
     {"id":{"name":"spr_part_inimigos","path":"sprites/spr_part_inimigos/spr_part_inimigos.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_solido","path":"sprites/spr_solido/spr_solido.yy",},},

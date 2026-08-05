@@ -13,10 +13,10 @@ if (_col)
 {
     if (_col.level_inimigo == level_inimigo and timer <= 0)
     {
-        var _inimigo = instance_create_layer(x, y, "Entidades", obj_inimigo_01);
+        var _inimigo = instance_create_layer(x, y, "Entidades", inimigo_id);
         _inimigo.level = level_inimigo + 1;
-        _inimigo.max_vel = vel_inimigo + 0.1;
-        _inimigo.vida_max = vida_inimigo + 1;
+        _inimigo.max_vel = vel_inimigo + 0.05;
+        _inimigo.vida_max = vida_inimigo + 0.3;
         _inimigo.vida_atual = _inimigo.vida_max;
         
         instance_destroy();

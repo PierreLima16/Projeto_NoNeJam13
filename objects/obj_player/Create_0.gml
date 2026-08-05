@@ -15,10 +15,19 @@ atirar = false;
 estado = noone;
 estado_txt = "Idle";
 
+vida_max = 40;
+vida_atual = vida_max;
+
 var _x = x - sprite_xoffset + sprite_width/2;
 var _y = y - sprite_yoffset + sprite_height/2;
 minha_arma = instance_create_layer(_x, _y, "Armas", obj_arma_player);
 minha_arma.arma_id = id;
+
+toma_dano = function(_dano)
+{
+    vida_atual -= _dano;
+    return;
+}
 
 aplica_movimento = function()
 {
@@ -83,4 +92,5 @@ estado_walk = function()
     }
 }
 
+//Iniciando no estado de idle'
 estado = estado_idle;

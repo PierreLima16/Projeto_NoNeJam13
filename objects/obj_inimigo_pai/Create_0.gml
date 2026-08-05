@@ -1,29 +1,32 @@
 velh = 0;
 velv = 0;
 
-max_vel = 0.5;
+max_vel = 0.3;
 
 dir = 1;
 
 estado = "Seguindo";
 
-vida_max = 2;
+vida_max = 1;
 vida_atual = vida_max;
 level = 1;
 
-colisores = [obj_solido, obj_inimigo_pai];
+colisores = [obj_solido];
+
+tipo_de_inimigo(tipos_inimigos.inimigo_1);
 
 alvo = noone;
 dest_x = 0;
 dest_y = 0;
 
-tempo_ataque = FPS;
+dano = 0.5;
+
+tempo_ataque = 5;
 timer_ataque = 0;
 
 
 toma_dano = function(_dano)
 {
-    
     vida_atual -= _dano;
     return;
     
@@ -67,7 +70,7 @@ maquina_estados = function()
             timer_ataque--;
             if (timer_ataque <= 0)
             {
-                show_message("Ataquei");
+                obj_player.toma_dano(dano);
                 timer_ataque = tempo_ataque;
             }
             
@@ -101,6 +104,7 @@ maquina_estados = function()
                 {
                     var _part = instance_create_layer(_x, _y, "Entidades", obj_part_inimigos);
                     _part.dir = _dir;
+                    _part.inimigo_id = inimigo_id;
                     _part.level_inimigo = level;
                     _part.vel_inimigo = max_vel;
                     _part.vida_inimigo = vida_max;
