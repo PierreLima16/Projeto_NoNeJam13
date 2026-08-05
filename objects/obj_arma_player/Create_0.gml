@@ -4,6 +4,7 @@ arma_id = noone;
 arma_dir = 0;
 
 dir = 1;
+dist = 12;
 
 atirar = false;
 
@@ -44,8 +45,8 @@ estado_equipado = function()
         x = _x_player;
         y = _y_player;
         
-        var _x = x + lengthdir_x(20, arma_dir);
-        var _y = y + lengthdir_y(20, arma_dir);
+        var _x = x + lengthdir_x(dist, arma_dir);
+        var _y = y + lengthdir_y(dist, arma_dir);
         
         arma_x = _x;
         arma_y = _y;

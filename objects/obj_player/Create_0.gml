@@ -37,6 +37,10 @@ aplica_movimento = function()
     up    = keyboard_check(ord("W"));
     down  = keyboard_check(ord("S"));
     
+    //Ajustando lado que vou olhar
+    //Se minha velocidade horizontal não estiver zerada
+    if (velh != 0) dir = sign(velh); //Eu uso ela de base para saber para onde devo olhar
+    
     //Pegando a direção que devo ir
     var _dir = point_direction(0, 0, (right - left), (down - up))
     
@@ -68,6 +72,9 @@ estado_idle = function()
     //Permitindo o movimento
     aplica_movimento();
     
+    //Ajustando minha sprite
+    troca_sprite(spr_player_idle);
+    
     //Se eu estou apertando alguma tecla de movimento
     if ((down xor up) or (right xor left))
     {
@@ -83,6 +90,9 @@ estado_walk = function()
     
     //Permitindo o movimento
     aplica_movimento();
+    
+    //Ajustando minha sprite
+    troca_sprite(spr_player_walk);
     
     //Se minha velocidade horizontal e velocidade vertical estiver zerada
     if (velh == 0 and velv == 0)

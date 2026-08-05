@@ -70,3 +70,16 @@ function colisao(_hspd, _vspd, _colisores)
 
     y += _vspd;
 }
+
+function troca_sprite(_spr)
+{
+    if (sprite_index != _spr)
+    {
+        sprite_index = _spr;
+        image_index = 0;
+    }
+}
+
+
+
+

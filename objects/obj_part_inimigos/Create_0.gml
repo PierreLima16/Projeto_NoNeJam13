@@ -9,6 +9,7 @@ acel = 0.05;
 
 level_inimigo = 0;
 inimigo_id = 0;
+inimigo_tipo = 0;
 vel_inimigo = 0;
 vida_inimigo = 0;
 

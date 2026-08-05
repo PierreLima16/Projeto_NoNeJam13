@@ -105,6 +105,7 @@ maquina_estados = function()
                     var _part = instance_create_layer(_x, _y, "Entidades", obj_part_inimigos);
                     _part.dir = _dir;
                     _part.inimigo_id = inimigo_id;
+                    _part.inimigo_tipo = inimigo_tipo;
                     _part.level_inimigo = level;
                     _part.vel_inimigo = max_vel;
                     _part.vida_inimigo = vida_max;
