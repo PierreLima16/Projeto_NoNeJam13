@@ -8,8 +8,8 @@
   "name":"obj_inimigo_02",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Inimigos",
+    "path":"folders/Objects/Inimigos.yy",
   },
   "parentObjectId":{
     "name":"obj_inimigo_pai",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo_02",
-    "path":"sprites/spr_inimigo_02/spr_inimigo_02.yy",
+    "name":"spr_cogumelo",
+    "path":"sprites/spr_cogumelo/spr_cogumelo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

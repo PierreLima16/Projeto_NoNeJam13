@@ -1,0 +1,1 @@
+lista_inimigos = [obj_inimigo_01];

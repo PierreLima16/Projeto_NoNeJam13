@@ -1,5 +1,9 @@
 #macro FPS game_get_speed(gamespeed_fps)
 
+global.level = 1;
+global.xp_atual = 0;
+global.xp_max = 100;
+
 enum tipos_inimigos
 {
     inimigo_1,
@@ -7,6 +11,9 @@ enum tipos_inimigos
     inimigo_3,
     inimigo_4,
     inimigo_5,
+    inimigo_6,
+    inimigo_7,
+    inimigo_8,
 }
 
 function tipo_de_inimigo(_tipo)
@@ -30,13 +37,37 @@ function tipo_de_inimigo(_tipo)
         
         case tipos_inimigos.inimigo_3:
             
+            inimigo_id = obj_inimigo_03;
+            
             break;
         
         case tipos_inimigos.inimigo_4:
             
+            inimigo_id = obj_inimigo_04;
+            
             break;
         
         case tipos_inimigos.inimigo_5:
+            
+            inimigo_id = obj_inimigo_05;
+            
+            break;
+        
+        case tipos_inimigos.inimigo_6:
+            
+            inimigo_id = obj_inimigo_06;
+            
+            break;
+        
+        case tipos_inimigos.inimigo_7:
+            
+            inimigo_id = obj_inimigo_07;
+            
+            break;
+        
+        case tipos_inimigos.inimigo_8:
+            
+            inimigo_id = obj_inimigo_08;
             
             break;
     }

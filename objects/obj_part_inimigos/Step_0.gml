@@ -11,6 +11,7 @@ if (timer > 0) timer--;
 var _col = instance_place(x, y, obj_part_inimigos);
 if (_col)
 {
+    if (_col.level_inimigo < 5)
     if (_col.level_inimigo == level_inimigo and _col.inimigo_tipo == inimigo_tipo and timer <= 0)
     {
         var _inimigo = instance_create_layer(x, y, "Entidades", inimigo_id);

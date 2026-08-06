@@ -1,3 +1,18 @@
+
+if (level > 1)
+{
+    shader_set(sh_outline);
+
+    shader_set_uniform_f(outline_r, red);
+    shader_set_uniform_f(outline_g, green);
+    shader_set_uniform_f(outline_b, blue);
+    
+    draw_sprite_ext(sprite_index, image_index, x, y + 1.5, (image_xscale * 1.1) * dir, image_yscale * 1.1, image_angle, c_purple, image_alpha);
+    
+    shader_reset();
+    
+}
+
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * dir, image_yscale, image_angle, image_blend, image_alpha);
 
 draw_text(x, y - 40, estado);

@@ -11,6 +11,8 @@ vida_max = 1;
 vida_atual = vida_max;
 level = 1;
 
+meu_xp = 10;
+
 colisores = [obj_solido];
 
 tipo_de_inimigo(tipos_inimigos.inimigo_1);
@@ -23,6 +25,14 @@ dano = 0.5;
 
 tempo_ataque = 5;
 timer_ataque = 0;
+
+outline_r = shader_get_uniform(sh_outline, "r_outline");
+outline_g = shader_get_uniform(sh_outline, "g_outline");
+outline_b = shader_get_uniform(sh_outline, "b_outline");
+
+red = 0;
+green = 0;
+blue = 0;
 
 
 toma_dano = function(_dano)

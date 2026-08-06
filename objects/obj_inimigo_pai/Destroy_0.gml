@@ -1,0 +1,1 @@
+global.xp_atual += meu_xp;

@@ -6,8 +6,8 @@
   "name":"obj_inimigo_01",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Inimigos",
+    "path":"folders/Objects/Inimigos.yy",
   },
   "parentObjectId":{
     "name":"obj_inimigo_pai",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo_01",
-    "path":"sprites/spr_inimigo_01/spr_inimigo_01.yy",
+    "name":"spr_sombracelhudo",
+    "path":"sprites/spr_sombracelhudo/spr_sombracelhudo.yy",
   },
   "spriteMaskId":null,
   "visible":true,
