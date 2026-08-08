@@ -5,6 +5,7 @@ arma_dir = 0;
 
 dir = 1;
 dist = 12;
+vel_bala = 8;
 
 atirar = false;
 
@@ -14,7 +15,7 @@ estado_txt = "Equipado";
 tempo_recarregar = FPS;
 timer_recarregar = tempo_recarregar;
 
-tempo_tiro = FPS * 0.4;
+tempo_tiro = FPS * 0.3;
 timer_tiro = tempo_tiro;
 
 tiro = function()
@@ -24,14 +25,13 @@ tiro = function()
     if (timer_tiro > 0) timer_tiro--;
     else if (timer_tiro <= 0)
     {
-        if (atirar)
-        {
-            var _tiro = instance_create_layer(arma_x, arma_y, "Armas", obj_tiro_player);
-            _tiro.max_vel = 8;
-            _tiro.tiro_dir = arma_dir;
-            
-            timer_tiro = tempo_tiro;
-        }
+        
+        var _tiro = instance_create_layer(arma_x, arma_y, "Armas", obj_tiro_player);
+        _tiro.max_vel = vel_bala;
+        _tiro.tiro_dir = arma_dir;
+        
+        timer_tiro = tempo_tiro;
+        
     }    
 }
 

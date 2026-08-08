@@ -23,6 +23,9 @@ var _y = y - sprite_yoffset + sprite_height/2;
 minha_arma = instance_create_layer(_x, _y, "Armas", obj_arma_player);
 minha_arma.arma_id = id;
 
+var _cam = instance_create_layer(x, y, "Geral", obj_camera);
+_cam.alvo = id;
+
 toma_dano = function(_dano)
 {
     vida_atual -= _dano;

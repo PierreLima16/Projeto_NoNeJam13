@@ -34,10 +34,15 @@ red = 0;
 green = 0;
 blue = 0;
 
+hit_dir = 0;
+tempo_hit = 10;
+timer_hit = 0;
+
 
 toma_dano = function(_dano)
 {
     vida_atual -= _dano;
+    timer_hit = tempo_hit;
     return;
     
 }
