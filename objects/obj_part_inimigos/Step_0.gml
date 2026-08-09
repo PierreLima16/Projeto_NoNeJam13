@@ -5,7 +5,15 @@ if (global.pause)
     velv = 0;
     exit;
 }
-else image_speed = 1;    
+
+if (sprite_ped != noone)
+{
+    if (sprite_index != sprite_ped)
+    {
+        sprite_index = sprite_ped;
+        image_index = irandom(image_number);
+    }
+}
 
 
 velh = lengthdir_x(max_vel, dir);
@@ -29,6 +37,7 @@ if (_col)
         _inimigo.max_vel = vel_inimigo + 0.05;
         _inimigo.vida_max = vida_inimigo + 0.3;
         _inimigo.vida_atual = _inimigo.vida_max;
+        _inimigo.meu_xp = xp_inimigo - 1;
         
         instance_destroy();
         

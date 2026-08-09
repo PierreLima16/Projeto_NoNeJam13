@@ -8,3 +8,4 @@ vida_atual = vida_max;
 
 max_vel = 0.7;
 
+sprite_part = spr_foguinho_ped;

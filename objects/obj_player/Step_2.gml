@@ -1,3 +1,5 @@
+ajusta_depth();
+
 colisao(velh, velv, colisores);
 
 var _x = x - sprite_xoffset + sprite_width/2;

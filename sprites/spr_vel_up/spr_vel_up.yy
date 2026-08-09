@@ -23,7 +23,7 @@
   ],
   "name":"spr_vel_up",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Icons",
     "path":"folders/Sprites/Upgrades/Icons.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":32,
+    "yorigin":16,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

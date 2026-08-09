@@ -7,3 +7,5 @@ vel = 0;
 
 tiro_dir = 0;
 dano = 1;
+
+lista_inimigos = ds_list_create();

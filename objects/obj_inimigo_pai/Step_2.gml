@@ -1,4 +1,4 @@
-
+ajusta_depth();
 
 if (place_meeting(x + velh, y, colisores))
 {

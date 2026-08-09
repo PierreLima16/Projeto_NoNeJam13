@@ -8,3 +8,4 @@ vida_atual = vida_max;
 
 max_vel = 0.5;
 
+sprite_part = spr_chifrin_ped;

@@ -1,3 +1,6 @@
+inicia_efeito_brilho();
+inicia_efeito_squash();
+
 velh = 0;
 velv = 0;
 vel = 2;
@@ -29,6 +32,8 @@ _cam.alvo = id;
 toma_dano = function(_dano)
 {
     vida_atual -= _dano;
+    aplica_efeito_brilho(c_red, 1);
+    efeito_squash(1.2, 1.5);
     return;
 }
 

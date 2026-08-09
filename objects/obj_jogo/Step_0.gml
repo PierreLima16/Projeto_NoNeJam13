@@ -17,6 +17,7 @@ if (global.xp_atual >= global.xp_max and !global.pause)
         var _escolha = instance_create_layer(_x, _y, "Geral", obj_escolha);
         _escolha.pos_x = _x;
         _escolha.pos_y = _y;
+        _escolha.upgrade = irandom_range(1, 11);
         
         if (i >= 3)
         {
@@ -25,6 +26,7 @@ if (global.xp_atual >= global.xp_max and !global.pause)
     }
 }
 
+/*
 if (global.level > 8)
 {
     if (instance_number(obj_inimigo_pai) <= 0)

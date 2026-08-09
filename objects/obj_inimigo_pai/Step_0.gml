@@ -10,20 +10,23 @@ else image_speed = 1;
 
 maquina_estados();
 
+retorna_efeito_brilho(0, 0.1);
+retorna_squash(0.1);
+
 if (vida_atual <= 0) estado = "Morte";
 
 if (x > obj_player.x) dir = -1;
 if (x < obj_player.x) dir = 1;
 
-/*
+
 if (timer_hit > 0)
 {
     timer_hit--;
     
-    velh = lengthdir_x(1, hit_dir);
-    velv = lengthdir_y(1, hit_dir);
+    velh = lengthdir_x(2, hit_dir);
+    velv = lengthdir_y(2, hit_dir);
 }
-*/
+
 
 switch(level)
 {

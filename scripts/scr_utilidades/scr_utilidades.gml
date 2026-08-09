@@ -2,7 +2,7 @@
 
 global.level = 1;
 global.xp_atual = 0;
-global.xp_max = 100;
+global.xp_max = 130;
 
 enum tipos_inimigos
 {
@@ -111,6 +111,10 @@ function troca_sprite(_spr)
     }
 }
 
+function ajusta_depth()
+{
+    depth = -y;
+}
 
 
 

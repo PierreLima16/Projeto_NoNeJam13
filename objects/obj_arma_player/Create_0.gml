@@ -1,3 +1,5 @@
+inicia_efeito_squash();
+
 arma_x = 0;
 arma_y = 0;
 arma_id = noone;
@@ -6,6 +8,7 @@ arma_dir = 0;
 dir = 1;
 dist = 12;
 vel_bala = 8;
+dano_arma = 1;
 
 atirar = false;
 
@@ -29,8 +32,12 @@ tiro = function()
         var _tiro = instance_create_layer(arma_x, arma_y, "Armas", obj_tiro_player);
         _tiro.max_vel = vel_bala;
         _tiro.tiro_dir = arma_dir;
+        _tiro.dano = dano_arma;
+        
+        efeito_squash(1.6, 1.2);
         
         timer_tiro = tempo_tiro;
+        
         
     }    
 }

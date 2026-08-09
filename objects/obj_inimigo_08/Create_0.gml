@@ -8,3 +8,5 @@ vida_atual = vida_max;
 
 max_vel = 1;
 
+sprite_part = spr_caveira_ped;
+

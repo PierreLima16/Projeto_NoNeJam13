@@ -7,3 +7,5 @@ else image_speed = 1;
 
 
 estado();
+
+retorna_squash(0.1);

@@ -35,6 +35,9 @@
     "name":"spr_part_inimigos",
     "path":"sprites/spr_part_inimigos/spr_part_inimigos.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_part_inimigos",
+    "path":"sprites/spr_part_inimigos/spr_part_inimigos.yy",
+  },
   "visible":true,
 }

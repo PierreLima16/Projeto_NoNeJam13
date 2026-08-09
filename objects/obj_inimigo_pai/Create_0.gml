@@ -1,7 +1,10 @@
+inicia_efeito_squash();
+inicia_efeito_brilho();
+
 velh = 0;
 velv = 0;
 
-max_vel = 0.3;
+max_vel = 0.8;
 
 dir = 1;
 
@@ -11,7 +14,7 @@ vida_max = 1;
 vida_atual = vida_max;
 level = 1;
 
-meu_xp = 10;
+meu_xp = 150;
 
 colisores = [obj_solido];
 
@@ -38,11 +41,18 @@ hit_dir = 0;
 tempo_hit = 10;
 timer_hit = 0;
 
+sprite_part = spr_sombracelhudo_ped;
+
 
 toma_dano = function(_dano)
 {
     vida_atual -= _dano;
+    
+    efeito_squash(1.8, 1.5);
+    aplica_efeito_brilho(c_white, 1);
+    
     timer_hit = tempo_hit;
+    
     return;
     
 }
@@ -124,6 +134,8 @@ maquina_estados = function()
                     _part.level_inimigo = level;
                     _part.vel_inimigo = max_vel;
                     _part.vida_inimigo = vida_max;
+                    _part.sprite_ped = sprite_part;
+                    _part.xp_inimigo = meu_xp;
                     
                     _dir += _val;
                 }
