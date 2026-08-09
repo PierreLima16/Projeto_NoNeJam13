@@ -121,6 +121,7 @@
     {"id":{"name":"obj_tiro_player","path":"objects/obj_tiro_player/obj_tiro_player.yy",},},
     {"id":{"name":"obj_titulo","path":"objects/obj_titulo/obj_titulo.yy",},},
     {"id":{"name":"obj_tween","path":"objects/obj_tween/obj_tween.yy",},},
+    {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"id":{"name":"rm_exemplo_botoes","path":"rooms/rm_exemplo_botoes/rm_exemplo_botoes.yy",},},
     {"id":{"name":"rm_exemplo_curvas","path":"rooms/rm_exemplo_curvas/rm_exemplo_curvas.yy",},},
     {"id":{"name":"rm_exemplos","path":"rooms/rm_exemplos/rm_exemplos.yy",},},
@@ -206,6 +207,7 @@
     {"roomId":{"name":"rm_exemplo_botoes","path":"rooms/rm_exemplo_botoes/rm_exemplo_botoes.yy",},},
     {"roomId":{"name":"rm_exemplo_curvas","path":"rooms/rm_exemplo_curvas/rm_exemplo_curvas.yy",},},
     {"roomId":{"name":"rm_exemplos","path":"rooms/rm_exemplos/rm_exemplos.yy",},},
+    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
