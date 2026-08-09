@@ -1,3 +1,5 @@
+if (global.pause) exit;
+
 x_ataque = x;
 y_ataque = y;
 

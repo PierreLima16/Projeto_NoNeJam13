@@ -18,7 +18,7 @@ atirar = false;
 estado = noone;
 estado_txt = "Idle";
 
-vida_max = 40;
+vida_max = 25;
 vida_atual = vida_max;
 
 var _x = x - sprite_xoffset + sprite_width/2;

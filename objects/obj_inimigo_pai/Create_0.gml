@@ -14,7 +14,7 @@ vida_max = 1;
 vida_atual = vida_max;
 level = 1;
 
-meu_xp = 150;
+meu_xp = 8;
 
 colisores = [obj_solido];
 
@@ -52,6 +52,7 @@ toma_dano = function(_dano)
     aplica_efeito_brilho(c_white, 1);
     
     timer_hit = tempo_hit;
+    screenshake(2);
     
     return;
     

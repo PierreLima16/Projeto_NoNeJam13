@@ -1,0 +1,2 @@
+tela_cheia = true;
+

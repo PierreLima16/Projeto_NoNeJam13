@@ -137,7 +137,7 @@ cria_upgrades(ups.bala_vel, spr_vel_bala, "Velocidade dos tiros aumentada em 2%"
 cria_upgrades(ups.aumento_xp, spr_xp, "Aumenta o ganho de xp em 3%", ganha_xp);
 
 //Espadas
-cria_upgrades(ups.espadas_volta, spr_ataque_fisico, "Uma espada girando em torno de você. \nPodendo ser até 3", espadas);
+cria_upgrades(ups.espadas_volta, spr_ataque_fisico, "Uma espada girando em torno de você", espadas);
 
 //Magia
 cria_upgrades(ups.rajada_magia, spr_magia, "4 rajadas de magia em 4 direções", magia);

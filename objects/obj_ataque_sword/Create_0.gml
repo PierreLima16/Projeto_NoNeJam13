@@ -16,5 +16,5 @@ dano.dano = 0.3;
 dano.image_xscale = 1.4;
 dano.image_yscale = 1.4;
 
-tempo = 5;
+tempo = 10;
 timer = tempo;

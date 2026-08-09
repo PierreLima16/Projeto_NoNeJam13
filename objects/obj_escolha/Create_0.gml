@@ -8,6 +8,8 @@ if (instance_exists(obj_escolha) and obj_escolha.id.upgrade == upgrade)
 pos_x = 0;
 pos_y = 0;
 
-escala_txt = 0.3;
+escala_txt = 0.2;
 
 escala_spr = 2;
+
+toquei = false;

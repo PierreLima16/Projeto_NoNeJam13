@@ -4,6 +4,9 @@ global.level = 1;
 global.xp_atual = 0;
 global.xp_max = 130;
 
+global.transicao = false;
+global.destino = false;
+
 enum tipos_inimigos
 {
     inimigo_1,
@@ -114,6 +117,35 @@ function troca_sprite(_spr)
 function ajusta_depth()
 {
     depth = -y;
+}
+
+function efeito_sonoro(_snd, _pitch1, _pitch2)
+{
+    var _pitch = random_range(_pitch1, _pitch2);
+    audio_play_sound(_snd, 0, 0, , , _pitch);
+    
+}
+
+function cria_transicao(_seq)
+{
+    if (!layer_sequence_exists("Transicao", _seq))
+    {
+        layer_sequence_create("Transicao", 0, 0, _seq);
+        layer_depth("Transicao", -99999);
+    }
+}
+
+function muda_room()
+{
+    global.transicao = true;
+    room_goto(global.destino);
+}
+
+function finaliza_transicao()
+{
+    global.transicao = false;
+    layer_depth("Transicao", 0);
+    
 }
 
 
