@@ -31,7 +31,7 @@ if (timer > 0) timer--;
 var _col = instance_place(x, y, obj_part_inimigos);
 if (_col)
 {
-    if (instance_number(obj_inimigo_pai) < 70)
+    if (instance_number(obj_inimigo_pai) < 75)
     {
         if (_col.level_inimigo < 5)
         if (_col.level_inimigo == level_inimigo and _col.inimigo_tipo == inimigo_tipo and timer <= 0)

@@ -32,11 +32,21 @@ if (_sobre or place_meeting(x, y, obj_cursor))
             
             case "CRÉDITOS":
                 
+                cria_transicao(sq_transicao1);
+                global.destino = rm_credits;
+                
                 break;
             
             case "SAIR":
                 
                 game_end();
+                
+                break;
+            
+            case "VOLTAR":
+                
+                cria_transicao(sq_transicao1);
+                global.destino = rm_menu;
                 
                 break;
         }

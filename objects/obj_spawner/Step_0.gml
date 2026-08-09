@@ -21,6 +21,8 @@ if (global.level > 8)
             var _y = random_range(y - sprite_height/2, y + sprite_height/2);
             
             var _inimigo = instance_create_layer(_x, _y, "Entidades", lista_inimigos[irandom_range(1, 8)]);
+            _inimigo.max_vel = _inimigo.max_vel + global.level * 0.15;
+            _inimigo.dano = _inimigo.dano + global.level * 0.02;
             
             timer_spawn = tempo_spawn;
         }
@@ -41,6 +43,8 @@ else
             var _y = random_range(y - sprite_height/2, y + sprite_height/2);
             
             var _inimigo = instance_create_layer(_x, _y, "Entidades", lista_inimigos[global.level]);
+            _inimigo.max_vel = _inimigo.max_vel + global.level * 0.25;
+            _inimigo.dano = _inimigo.dano + global.level * 0.015;
             
             timer_spawn = tempo_spawn;
         }

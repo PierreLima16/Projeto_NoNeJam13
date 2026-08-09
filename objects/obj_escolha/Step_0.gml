@@ -20,14 +20,14 @@ if (_sobre or place_meeting(x, y, obj_cursor))
     {
         global.pause = false;
         global.level += 1;
-        global.xp_max += 80;
+        global.xp_max += 110;
         global.xp_atual = 0;
         
         if (global.level > 7)
         {
             with(obj_spawner)
             {
-                qtd_max = qtd_max + 2;
+                qtd_max = qtd_max + 3;
             }
         
         }

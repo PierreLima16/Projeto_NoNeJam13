@@ -137,6 +137,7 @@
     {"id":{"name":"scr_tween","path":"scripts/scr_tween/scr_tween.yy",},},
     {"id":{"name":"scr_upgrades","path":"scripts/scr_upgrades/scr_upgrades.yy",},},
     {"id":{"name":"scr_utilidades","path":"scripts/scr_utilidades/scr_utilidades.yy",},},
+    {"id":{"name":"sq_credits","path":"sequences/sq_credits/sq_credits.yy",},},
     {"id":{"name":"sq_transicao1","path":"sequences/sq_transicao1/sq_transicao1.yy",},},
     {"id":{"name":"sq_transicao2","path":"sequences/sq_transicao2/sq_transicao2.yy",},},
     {"id":{"name":"sh_muda_cor","path":"shaders/sh_muda_cor/sh_muda_cor.yy",},},
